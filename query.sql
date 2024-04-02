@@ -16,7 +16,7 @@ INSERT INTO transaction (sender_user_id, receiver_user_id, amount, transaction_d
 
 --Consulta para obtener el nombre de la moneda elegida por un usuario específico
 
-SELECT money.currency_name, money.currency_symbol, user.name, user.balance
+SELECT money.currency_name, user.name
 FROM user
 JOIN money
 ON user.symbol = money.currency_id;
